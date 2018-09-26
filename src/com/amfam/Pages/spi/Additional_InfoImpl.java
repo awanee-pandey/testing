@@ -20,7 +20,8 @@ public class Additional_InfoImpl extends AmFamPage implements Additional_Info{
 		// TODO Auto-generated method stub
 		try{
 			func.waitForClickable(this.getPageDataReference(),NEXT_AI,50000,50000);
-			 getElement(NEXT_AI).click();		
+			 getElement(NEXT_AI).click();	
+			 System.out.println("J");
 				
 		}
 		catch(Exception ex){
