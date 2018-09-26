@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementDefinition xmlns="http://www.xframium.org/pageRegistry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xframium.org/pageRegistry http://www.xframium.org/xsd/pageManagement/pageRegistry.xsd">
+
+	<site name="Amfam">
+		<page name="Home_Page">
+			<element name="ZIP" descriptor="NAME" value="zipCode" />
+			<element name="START_QUOTING_BUTTON" descriptor="XPATH" value="//button[text()='Start Quoting']" />
+		</page>
+		
+		<page name="Information_Page">
+			<element name="FIRSTNAME" descriptor="ID" value="first-name" />
+			<element name="LASTNAME" descriptor="ID" value="last-name" />
+			<element name="ADDRESS" descriptor="ID" value="address1" />
+			<element name="DOB" descriptor="ID" value="dob" />
+			<element name="EMAIL" descriptor="ID" value="email-address" />
+			<element name="AGREETOTERMS" descriptor="XPATH" value="//button[contains(text(),'I Agree. Start Quote')]" />
+		</page>
+		
+		<page name="Vehicles_Page">
+		    <element name="VIN" descriptor="XPATH" value="//a[text()='Vin']" />
+		    <element name="VINNUMBER" descriptor="ID" value="vin-number" />
+		    <element name="MODEL_YEAR_VIN" descriptor="ID" value="select-year2" />
+		    <element name="ADDVEHICLEBYVIN" descriptor="ID" value="addVehicleByVIN" />
+		    <element name="BUSINESSPURPOSENO" descriptor="XPATH" value="//button[contains(text(), 'No')]" />
+		    <element name="BUSINESSPURPOSEYES" descriptor="XPATH" value="//button[contains(text(), 'Yes')]" />
+		    <element name="NEXT" descriptor="XPATH" value="//button[contains(text(), 'Save and Continue')]" />
+			<element name="MODEL_YEAR" descriptor="ID" value="year" />
+			<element name="MAKE" descriptor="ID" value="select-model" />
+			<element name="MODEL" descriptor="ID" value="address1" />
+			<element name="SERIES" descriptor="ID" value="select-series" />
+			<element name="ADDVEHICLE" descriptor="XPATH" value="//button[text()='Alert Button']" />
+			<element name="BUSINESSPURPOSE" descriptor="XPATH" value="//button[text()='Alert Button']" />
+		    
+		</page>
+		
+		<page name="Vehicles_Details">
+			<element name="USAGE" descriptor="ID" value="vehicleUse" />
+			<element name="MILESDRIVEN" descriptor="ID" value="annual-miles" />
+			<element name="NEXTBUTTON" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']"/>
+		</page>
+		
+		<page name="Driver_Info_Page">
+			<element name="NEXT_DRIVER" descriptor="XPATH" value="//button[@type='button' and @class='btn btn-primary']" />
+		</page>
+		
+		<page name="Person_Information">
+			<element name="GENDER" descriptor="ID" value="gender" />
+			<element name="MARITALSTATUS" descriptor="ID" value="marital-status" />
+		    <element name="EMPLOYMENT" descriptor="NAME" value="employmentStatus" />
+		    <element name="NEXT_PI" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']" />
+		</page>
+		
+		<page name="Additional_Info">
+			<element name="NEXT_AI" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']" />
+		</page>
+		
+		
+		<page name="Name_Insured">
+			<element name="HAVEAUTOINS" descriptor="XPATH" value="//button[@name='currently_insured' and contains(text(), 'Yes')]" />
+			<element name="STATECODE" descriptor="ID" value="current_insurance_stateCode" />
+			<element name="COMPANY" descriptor="ID" value="current_insurance_company" />
+			<element name="DURATION" descriptor="ID" value="insurance_length" />		
+			<element name="ENDDATE" descriptor="ID" value="policy_end_date" />
+			<element name="LIMITS" descriptor="ID" value="bodily_injury_limits" />
+			<element name="NEXT_NI" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']" />
+		</page>
+		
+		
+		<page name="Discounts">
+			<element name="AUTOPAY" descriptor="ID" value="auto-pay" />
+			<element name="PAPERLESS" descriptor="ID" value="paperless" />
+			<element name="NEXT_DISCOUNTS" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']" />		
+		</page>
+		
+		
+		
+		<page name="Choose_Coverage">
+			
+			<element name="NEXT_COV" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']" />
+		</page>
+		
+		<page name="Coverage_Summary">
+			<element name="BUYNOW" descriptor="XPATH" value="//button[text()=' Buy Now']" />
+		</page>
+		<page name="Purchase">
+			<element name="Continue" descriptor="XPATH" value="//a[contains(text(), 'Continue')]" />
+		</page>
+		
+		<page name="Verify">
+			<element name="LICENSESTATE" descriptor="ID" value="driversLicenseState" />
+			<element name="LICENSENUMBER" descriptor="ID" value="license_number" />
+			<element name="PHONE" descriptor="ID" value="verify-phone-number" />
+			<element name="NEXT_VERIFY" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']" />
+		</page>
+		
+		<page name="Vehicle_Details">
+			<element name="VIN" descriptor="ID" value="verifyVIN" />
+			<element name="NEXT_VEHICLE" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']" />
+		</page>
+		
+		<page name="Summary">
+			<element name="NEXT_SUMMARY" descriptor="XPATH" value="//button[@type='submit' and @class='btn btn-primary']" />
+		</page>
+		
+		<page name="Sign">
+			<element name="REVIEW" descriptor="XPATH" value="//a[contains(text(), 'Review Documents')]" />
+		</page>
+		
+		<page name="Review_Sign">
+			<element name="REVIEWDOCUMENTS" descriptor="ID" value="action-bar-btn-continue" />
+			<element name="SIGN1" descriptor="ID" value="ds_hldrBdy_f8150d80-5b00-439e-8b14-086155bfd773" />
+			<element name="SIGNATURESUBMIT1" descriptor="XPATH" value="action-bar-btn-continue" />
+			<element name="SIGN2" descriptor="ID" value="ds_hldrBdy_29734154-2c42-4f96-8936-247264e0fb28" />
+			<element name="SIGNATURESUBMIT2" descriptor="ID" value="action-bar-bottom-btn-finish" />
+		</page>
+		
+		<page name="Payment">
+			<element name="choose" descriptor="ID" value="payment-information-choose-payment-amount-label-min-0" />
+			<element name="SIGN1" descriptor="ID" value="ds_hldrBdy_f8150d80-5b00-439e-8b14-086155bfd773" />
+			<element name="SIGNATURESUBMIT1" descriptor="XPATH" value="action-bar-btn-continue" />
+			<element name="SIGN2" descriptor="ID" value="ds_hldrBdy_29734154-2c42-4f96-8936-247264e0fb28" />
+			<element name="SIGNATURESUBMIT2" descriptor="ID" value="action-bar-bottom-btn-finish" />
+		</page>
+		
+		<!--<page name="index">
+			<element name="LOGO" value="" descriptor="XPATH"/>
+		</page>-->
+	</site>
+</elementDefinition>

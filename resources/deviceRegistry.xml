@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deviceRegistry xmlns="http://www.xframium.org/deviceRegistry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xframium.org/deviceRegistry http://www.xframium.org/xsd/deviceManagement/deviceRegistry.xsd">
+	<device name="NEXUS 6" os="Android" manufacturer="Google" model="NEXUS 6" active="false" />
+	<!--
+	<device name="S4" os="Android" make="Samsung" model="I545 Galaxy S IV 4.2" active="false" />
+	-->
+	<device name="ip6" os="iOS" manufacturer="Apple" model="iPhone-6" availableDevices="2"  active="false"/>
+	
+	<device name="Firefox" os="Windows" browserName="firefox" manufacturer="Mozilla" model="Firefox" active="false" />
+	<device name="Chrome" os="Windows" browserName="chrome" manufacturer="Google" model="Chrome" active="true" />
+	<device name="Internet Explorer" browserName="internet explorer" manufacturer="Microsoft" model="Internet Explorer" os="Windows" active="false">
+	
+   		<capability name="ignoreProtectedModeSettings" class="BOOLEAN">true</capability>
+   	</device>
+   	
+   	 <device browserName="Chrome" os="Android" osVersion ="6.0.1" model="Redmi Note 4"  manufacturer="Xiomi" availableDevices="1" driverType="WEB" name="Redmi Note 4 Chrome"  active="false"/>
+   	 <device name="Android" os="Android" osVersion ="6.0.1" model="Redmi Note 4"  manufacturer="Xiomi" availableDevices="1" driverType="APPIUM"  active="false">
+		
+		<capability name="device" class="STRING" >android</capability>
+		<capability name="platfromname" class="STRING" >Android</capability>
+		<capability name="deviceName" class="STRING" >Redmi</capability>
+		<capability name="appPackage" class="STRING" >C:\software\Selenium\selenium-2.53.1\com.android.chrome_v56.0.2924.87-292408700_Android-4.1.apk</capability>
+		<capability name="appActivity" class="STRING" >com.google.andriod.apps.chrome.main</capability>
+		
+		<capability name="CLEAR_APP_USER_DATA" class="BOOLEAN">Yes</capability>
+		
+	
+	</device>
+</deviceRegistry>
